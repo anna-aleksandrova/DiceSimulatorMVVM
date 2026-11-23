@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.broadcastflow-mergeDebugResources-37:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/mnt/data/.gradle/caches/9.6.0/transforms/cfc50cd0399caf1635dc88ce21d30e3a/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}
