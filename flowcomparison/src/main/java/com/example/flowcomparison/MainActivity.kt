@@ -15,19 +15,15 @@ import java.math.BigInteger
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-
-    private val viewModel by viewModels<CalculationViewModel>()
+    private lateinit var binding: ActivityMainBinding
+    private val viewModel: CalculationViewModel by viewModels()
     private var fibonacciJob: Job? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        viewModel  // create viewModel to start flow
-
 
         binding.btnSubscribe.setOnClickListener {
             if (fibonacciJob != null) {
@@ -48,11 +44,5 @@ class MainActivity : AppCompatActivity() {
             fibonacciJob?.cancel()
             fibonacciJob = null
         }
-
-
-
-
-
     }
-
 }
