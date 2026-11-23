@@ -10,4 +10,5 @@
 local.properties
 
 
-build
+build*.mp4
+*.webm
